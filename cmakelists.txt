@@ -1,3 +1,8 @@
 cmake_minimum_required (VERSION 3.10.2)
 project (exercise)
-add_executable(exercise main.cpp)
+
+include_directories(BEFORE
+		${PROJECT_SOURCE_DIR}/headers
+)
+
+add_executable(${PROJECT_NAME} main.cpp)
